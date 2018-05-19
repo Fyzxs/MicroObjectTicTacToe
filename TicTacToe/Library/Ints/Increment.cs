@@ -2,10 +2,10 @@
 {
     public sealed class Increment : Int
     {
-        private readonly Int _origin;
+        private readonly int _origin;
 
-        public Increment(Int origin) => _origin = origin;
+        public Increment(Int origin) => _origin = origin + 1;
 
-        protected override int RawValue() => _origin + 1;
+        protected override int RawValue() => _origin;
     }
 }
